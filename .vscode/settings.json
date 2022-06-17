@@ -1,0 +1,17 @@
+{
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "terminal.integrated.env.linux": {
+    // for debugging please *ALSO* see .env file in the root of the project
+    "PYTHONPATH": ".${pathSeparator}tests${pathSeparator}${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"
+  },
+  "python.analysis.extraPaths": [],
+  "python.defaultInterpreterPath": ".venv/bin/python"
+}
